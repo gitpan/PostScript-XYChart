@@ -1,0 +1,11 @@
+Changes
+Makefile.PL
+MANIFEST
+XYChart.pm
+README
+t/01gpaper.pl
+t/02gpaper.pl
+t/11xychart.pl
+t/12xychart.pl
+t/13xychart.pl
+t/test.lines

@@ -1,0 +1,40 @@
+PostScript/XYChart version 0.01
+===============================
+
+This module creates a graph from either a file or an array of points.  The graph
+is written to a postscript file, either for printing directly or in EPS format
+for inclusion in another file.
+
+It would be used as follows:
+    (a) Create an XYChart object using the defaults or any of over 140 options.
+    (b) Use the line_from_file() method to read graph data from a CSV file.
+    (c) Call build_chart() to assemble the postscript code which draws the graph.
+    (d) Use the output() method to save the postscript file.
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make install
+
+The t directory holds some scripts which can be used to test the module.  I have
+yet to work these up into proper tests.  To run the tests, cd to the directory
+first as they expect to find files there.
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+  PostScript::File
+  PostScript::GraphStyle
+  PostScript::GraphKey
+  PostScript::GraphPaper
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2002 Christopher P Willmot, all rights reserved.
+This module is published under the Perl Artistic licence, a copy of which may be
+found in the perl distribution or on http://www.perl.org.
+
